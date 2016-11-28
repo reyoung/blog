@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: caddy-k8s
+  labels:
+    app: web
+spec:
+  containers:
+    - name: caddy-frontend
+      image: abiosoft/caddy
+      ports:
+        - containerPort: 2015
+        - containerPort: 80
+        - containerPort: 443
+      resources:
+        limits:
+          memory: 40Mi

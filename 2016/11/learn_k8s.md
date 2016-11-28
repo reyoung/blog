@@ -14,3 +14,9 @@ TIPS:
 * 在相同命令运行`kubectl config use-context vagrant-multi`配置k8s的访问
 * kubectl get nodes查看当前节点数。
 
+## 创建pod
+
+* pod的文档http://kubernetes.io/docs/user-guide/pods/multi-container/
+* 如何设置资源http://kubernetes.io/docs/admin/limitrange/
+
+K8S的pod格式比较类似于docker-compose的写法。可以连续启动多个contrainer。
