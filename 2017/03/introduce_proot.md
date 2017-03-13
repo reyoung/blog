@@ -38,7 +38,7 @@ root@5f3ed64ed3f1 ~# ldd (which openssl)
 
 ## Linux Chroot
 
-root目录，即linux系统的根目录。一般常见的linux程序，会将自己的[rpath](https://en.wikipedia.org/wiki/Rpath)设置到以系统根目录的绝对路径来搜索自己依赖的动态库。以之前的`openssl`举例，它依赖的动态库有 libssl.so，这个库的路径是`/lib/x86_64-linux-gnu/libssl.so.1.0.0`。
+root目录，即linux系统的根目录。一般常见的linux程序，会将自己的搜索动态库的路径，设置到一个以系统根目录的绝对路径。以之前的`openssl`举例，它依赖的动态库有 libssl.so，这个库的路径是`/lib/x86_64-linux-gnu/libssl.so.1.0.0`。
 
 如果我们在CentOS里面将某一版本的ubuntu系统全部下载下来，解压缩到某一个路径里。例如解压缩到 `~/ubuntu/`里面，里面的所有二进制程序，还是依赖着root目录下的动态库。这时候，如果直接查找某一个文件依赖的动态库，便会报错。例如
 
