@@ -12,10 +12,6 @@
 
 这个阶段，Paddle Team大概也就只有3-4人。整体的工作流程大约是这样子的。
 
-
-<details> 
-<summary></summary>
-
 ![small team](https://g.gravizo.com/source/svg?https://gist.githubusercontent.com/reyoung/d976f3c8b1a081eb0b2e6ae02dd8213e/raw/829511efb9da13b2708a3fdde038292cbe7e0ff3/g1.dot)
 
 这个阶段我们Paddle主要是一些维护工作，和follow新的论文，新的进展。有一个主要的leader A，然后这个A通知大家我们下一步要做什么，什么是有意义的。然后每一个人只和A讨论我们的工作进展，工作内容等等。
