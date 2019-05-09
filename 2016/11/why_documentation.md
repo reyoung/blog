@@ -12,13 +12,11 @@
 
 这个阶段，Paddle Team大概也就只有3-4人。整体的工作流程大约是这样子的。
 
-![small team](http://g.gravizo.com/g?
-  graph G {
-     A -- B
-     A -- C
-     A -- D  
-  }
-)
+
+<details> 
+<summary></summary>
+
+![small team](https://g.gravizo.com/source/svg?https://gist.githubusercontent.com/reyoung/d976f3c8b1a081eb0b2e6ae02dd8213e/raw/829511efb9da13b2708a3fdde038292cbe7e0ff3/g1.dot)
 
 这个阶段我们Paddle主要是一些维护工作，和follow新的论文，新的进展。有一个主要的leader A，然后这个A通知大家我们下一步要做什么，什么是有意义的。然后每一个人只和A讨论我们的工作进展，工作内容等等。
 
@@ -30,18 +28,7 @@
 
 之前和一些其他部门的同事聊天，大家基本上说，团队到了7-8人就到头了。因为最后新加入的人沟通成本太高，我们根本没办法把精力放到工作上。白天上班开会，晚上加班回家写代码的惨剧就发生了。为什么会这个样子呢？因为我们的沟通模式没有变化。
 
-![middle team](http://g.gravizo.com/g?
-  graph G {
-     A -- B
-     A -- C
-     A -- D
-     A -- E
-     A -- F
-     A -- G
-     A -- H
-     A -- I
-  }
-)
+![middle team](https://g.gravizo.com/source/svg?https://gist.githubusercontent.com/reyoung/d976f3c8b1a081eb0b2e6ae02dd8213e/raw/829511efb9da13b2708a3fdde038292cbe7e0ff3/g2.dot)
 
 如上图所示，Leader还是A，每个team member的沟通时间我们还是认为每天一个小时。那么Leader A每天要花8个小时沟通。如果按照每天工作时间8小时来算，A的工作就完事了。这是简单算数，但是实际情况会更加悲惨。
 
@@ -53,17 +40,7 @@ A同学也是一个热爱编程的同事，常年累月的沟通让他心情非�
 
 但是对于我们，本身上是开发分布式机器学习系统的人，沟通为什么要这么**集中式**呢？所以我们开始玩起了自组织(P2P)的团队沟通。也就是每个人为每个人自己的工作负责，每个人每周和大家汇报一下进展就好了。当然，自组织的时候，我们之间也是有合作的。但是可以是小范围的合作。那么我们的沟通关系就变成了这样。
 
-![middle team 2](http://g.gravizo.com/g?
-  graph G {
-     A -- B
-     A -- C
-     D -- E
-     D -- F    
-     G -- H
-     H -- I
-     I -- G
-  }
-)
+![middle team 2](https://g.gravizo.com/source/svg?https://gist.githubusercontent.com/reyoung/d976f3c8b1a081eb0b2e6ae02dd8213e/raw/829511efb9da13b2708a3fdde038292cbe7e0ff3/g3.dot)
 
 我们变成了一个一个的小团体，每个小团体之间沟通比较多，然后大家还是为了项目的一个主线来努力。这一阶段又变得比较稳定了。一来是，没有了特别强力的Leader A作为单点，所以就不会有单点依赖。二来是，整体团队的沟通成本变小了，我们的沟通也方便了。有什么事情，只要和大家说一声，这个事我做了，大家也都没意见，我们就可以接着往下做下去了。
 
@@ -71,24 +48,7 @@ A同学也是一个热爱编程的同事，常年累月的沟通让他心情非�
 
 之前的中型团队沟通我们已经解决了。但是，其实那个沟通方式有一个根本性的问题，就是虽然沟通成本下来了，大家可以专心工作。但是，新人非常难以融入。因为随着沟通的深入，几个熟悉的人之间必然有着一定的默契，做的事情也必然有一定因果关系。这就导致了，A不理解H在做什么，H也不知道A为什么要这么做。
 
-![middle team 2](http://g.gravizo.com/g?
-  graph G {
-     subgraph cluster_a {
-       A -- B
-       A -- C
-     }
-     subgraph cluster_b {
-       D -- E
-       D -- F    
-     }
-     subgraph cluster_c {
-       G -- H
-       H -- I
-       I -- G
-     }
-     J [label="新人J"]
-  }
-)
+![middle team 2](https://g.gravizo.com/source/svg?https://gist.githubusercontent.com/reyoung/d976f3c8b1a081eb0b2e6ae02dd8213e/raw/829511efb9da13b2708a3fdde038292cbe7e0ff3/g4.dot)
 
 如上图所示，"新人J" 很难融入这个团队。因为大家已经有了固有的习惯。
 
@@ -107,13 +67,7 @@ A同学也是一个热爱编程的同事，常年累月的沟通让他心情非�
 
 所以，其实文档就是我们的中间层。如果我们把大型团队的所有沟通，比如我想如何做这个事情，这个事情我有什么困难了，全公开的放到一个文档中，我们其实就只用和"文档"沟通工作了。
 
-![large team](http://g.gravizo.com/g?
-  graph G {
-     doc [shape=box, label="team 文档"]
-     doc -- A [label="我要怎么做系统A"]
-     doc -- B [label="系统A的工作我也有一些看法"]
-  }
-)
+![large team](https://g.gravizo.com/source/svg?https://gist.githubusercontent.com/reyoung/d976f3c8b1a081eb0b2e6ae02dd8213e/raw/829511efb9da13b2708a3fdde038292cbe7e0ff3/g5.dot)
 
 这样，我们把讨论的过程放到了文档中，这个好处是\:
 * 解耦合大家的时间\: 从SGD到AsyncSGD。我和别人沟通的时间，可以由我自己来掌控了。并不需要谁谁谁一句话，我就要和他聊。谁谁谁另一句话，我就要和另一个人聊。
